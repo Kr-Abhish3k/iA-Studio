@@ -1,0 +1,50 @@
+.header{
+	height: 80px;
+	width: 100%;
+	padding: 24px 0;
+	text-align: right;
+	.wrap{
+		@include clearfix;
+		padding: 0 24px;
+
+		.header_wrap_logo{
+			float: left;
+
+	
+		.header_logo{
+		
+			background-image: url("../images/logo-ia.svg"); background-repeat: no-repeat; background-position: center center;
+				display: block;
+				height: 32px;
+				width: 35px;
+			}
+		}
+
+		.header_menu{ //nav
+			float: right;
+	
+		.header_list{  //ul
+				@include clearfix;
+				//margin: 3px;
+		
+			.header_list_item{  //li
+					float: left;
+					text-align: center;		
+					margin-left: 10px;
+					padding: 8px 0;
+					&:first-child{
+						margin-left: 0px;
+					}
+				.header_menu_link{  //a
+						display: block;
+						@include fontStyle($size15,$header-list-font,"",$mainFont-color);
+						line-height: 15px;
+					}
+					a:hover{
+							color: #00baff;
+					}
+				}
+			}
+		}
+	}
+}

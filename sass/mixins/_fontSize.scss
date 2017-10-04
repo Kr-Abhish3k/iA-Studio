@@ -1,0 +1,4 @@
+@mixin fontSize($size:16){
+	font-size: $size+px; //fallback for older browsers not supporting rem.
+	font-size: ($size/16)+rem;
+}

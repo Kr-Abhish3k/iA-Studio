@@ -1,0 +1,17 @@
+*{
+	box-sizing: border-box;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+.--blue{
+	a:hover{
+		color: #00baff;
+	}
+}
+
+.active{
+	color: #00baff;
+}
